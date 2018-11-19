@@ -1,0 +1,34 @@
+Section 7 - Lecture 34
+Notes on Cryptocurrency Implementation
+
+We'll start writing the code for a few new concepts. The first of which is digital wallets
+We shortly discussed this in the introduction.
+
+Wallet - The wallet is the core object of the currency with 3 main components:
+    1. Balance - Total balance alloted to an individual.
+    2. Keys - Private and Public Keys which are vital for generating unique digital signatures, and the public
+              Key is used to verify the signatures.
+    3. Public Address - Identical to the public key. Used to send currency to the wallet.
+
+Transactions - Consist of 2 components:
+    1. Details about the original sender: (Input, Balance, Public Key)
+    2. Output Object - Amount and address field. (senders c.balance - amount out)
+
+ Digital Signature - Each individual who wants to record a transaction must stamp the transaction with his keys.
+
+
+Transaction Pool - Lecture 44
+
+An object that contains all new transaction submitted by individuals. Miners do the job of creating blcks
+that confirm the transactions. While transaction objects can be created instantly, there will be a brief period where it
+is unconfirmed until a miner confirms it.
+
+Miners of Transactions
+
+THe primary role of the miner is to take tranactions rom the pool, do the computational wotk and storing
+them in the blockchain.
+
+What is their incentive?
+This leads us to the concept of rewards: transaction that uses currency as payment
+Miners can rack up these rewards and build up the wealth. These transactions got from unconfirmed to confirmed.
+
