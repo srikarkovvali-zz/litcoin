@@ -1,5 +1,5 @@
 const ChainUtil = require('../chain.util');
-const { MINING_REWARD } = require('../config');
+const {MINING_REWARD} = require('../config');
 
 class Transaction {
     constructor(){
@@ -55,9 +55,9 @@ class Transaction {
     }
 
     static rewardTransaction(minerWallet, blockchainWallet){
-        return Transaction.transactionWithOutputs(blockchainWallet, [(
-            amount: MINING_REWARD,address: minerWallet.publicKey
-        )]);
+        return Transaction.transactionWithOutputs(blockchainWallet, [{
+            amount: MINING_REWARD, address: minerWallet.publicKey
+        }]);
     }
 
     //pass the transaction we want to verify into the method and return

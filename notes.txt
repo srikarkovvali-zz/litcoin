@@ -32,3 +32,11 @@ What is their incentive?
 This leads us to the concept of rewards: transaction that uses currency as payment
 Miners can rack up these rewards and build up the wealth. These transactions got from unconfirmed to confirmed.
 
+The Nuance of Wallet Balance
+
+    - The balance is the output amounts that belong to a user
+    - Update the balance at least before each transaction
+    - All output's since the user's most recent transaction.
+    - It is possible double counting of transactions within the blockchain history.
+
+Say user foo wants to send 50 to Bar.
